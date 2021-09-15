@@ -1,6 +1,9 @@
 package com.github.martinfrank.eobedit;
 
+import com.github.martinfrank.eobedit.data.Items;
+import com.github.martinfrank.eobedit.data.PlayerData;
 import com.github.martinfrank.eobedit.data.SavegameFile;
+import com.github.martinfrank.eobedit.data.Stat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,9 +23,18 @@ public class App {
             throw new IllegalArgumentException("you must provide a savegame file");
         }
         SavegameFile file = new SavegameFile(args[0]);
-        LOGGER.debug(file.getPlayer(0).getName());
-        LOGGER.debug("get item {}", file.getPlayer(0).getInventory(0));
-//        file.save();
+        for(int i = 0; i < 4; i ++){
+            PlayerData p = file.getPlayer(i);
+            p.setStat(Stat.Stats.STR, 18,18,100,100);
+            p.setStat(Stat.Stats.DEX, 18);
+            p.setStat(Stat.Stats.CON, 18);
+            p.setStat(Stat.Stats.INT, 18);
+            p.setStat(Stat.Stats.WIS, 18);
+            p.setStat(Stat.Stats.CHA, 18);
+            p.setStat(Stat.Stats.HP, 100);
+        }
+
+        file.save();
     }
 
 }

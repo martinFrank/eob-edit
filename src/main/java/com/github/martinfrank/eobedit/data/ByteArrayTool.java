@@ -28,6 +28,24 @@ public class ByteArrayTool {
     }
 
     public static byte asByte(String str) {
-        return (byte)Integer.parseInt(str, 16);
+        return (byte) Integer.parseInt(str, 16);
+    }
+
+    public static int asInt(byte[] data) {
+        int value = 0;
+        for (int i = 0; i < data.length; i++) {
+            int shift = i * 8;
+            value = value + ((0xff & data[i]) << shift);
+        }
+        return value;
+    }
+
+    public static byte[] fromInt(int value, int size) {
+        byte[] data = new byte[size];
+        for (int i = 0; i < size; i++) {
+            int shift = i * 8;
+            data[i] = (byte)(0xFF & (value >> shift));
+        }
+        return data;
     }
 }
