@@ -1,0 +1,12 @@
+ITEM,IT,Item,any other item
+DAGGER,DA,Dagger,Dagger or Dart
+PRIMARY,PR,Primary,Primary Weapon
+SECONDARY,SE,Secondary,Secondary Weapon
+SHIELD,SH,Shield,Shield
+TWOHANDED,TW,TwoHanded,Two handed Weapon
+RING,RI,Ring,Ring
+AMULETT,AM,Amulett,Amulett
+ARMOR,AR,Armor,Body Armor
+BRACER,BR,Bracers,Bracers or Arm Protections
+HELMET,HE,Helmet,Helmet
+BOOTS,BO,Boots,Boots or Foot wear

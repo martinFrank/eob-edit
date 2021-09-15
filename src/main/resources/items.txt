@@ -1,0 +1,4 @@
+NOTHING,00,00,IT,FRPMCT,nothing,nothing clears inventory space
+ROBE_A,02,00,AR,FRPMCT,Robe,Robe+0
+DAGGER_A,04,00,DA,FRPMCT,Dagger,Dagger+0
+LOCK_PICKS_A,06,00,IT,RT,Lock Picks,Lock Picks

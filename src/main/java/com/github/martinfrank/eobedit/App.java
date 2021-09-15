@@ -1,13 +1,28 @@
 package com.github.martinfrank.eobedit;
 
+import com.github.martinfrank.eobedit.data.SavegameFile;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+
 public class App {
 
-    public static void main(String[] args){
+    private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
+
+    public static void main(String[] args) throws IOException {
         App app = new App();
-        app.start();
+        app.start(args);
     }
 
-    private void start() {
+    private void start(String[] args) throws IOException {
+        if (args == null ){
+            throw new IllegalArgumentException("you must provide a savegame file");
+        }
+        SavegameFile file = new SavegameFile(args[0]);
+        LOGGER.debug(file.getPlayer(0).getName());
+        LOGGER.debug("get item {}", file.getPlayer(0).getInventory(0));
+//        file.save();
     }
 
 }
