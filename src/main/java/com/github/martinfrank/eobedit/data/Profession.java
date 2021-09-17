@@ -14,12 +14,12 @@ public enum Profession {
     RANGER_CLERIC("Ranger/Cleric", 13, 2), CLERIC_MAGE("Cleric/Mage", 14, 2);
 
     public final String description;
-    public final int id;
+    public final byte id;
     public final int amount ;
 
     Profession(String description, int id, int amount) {
         this.description = description;
-        this.id = id;
+        this.id = (byte)id;
         this.amount = amount;
     }
 

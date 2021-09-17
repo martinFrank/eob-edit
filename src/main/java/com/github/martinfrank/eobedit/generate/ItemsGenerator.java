@@ -1,14 +1,19 @@
 package com.github.martinfrank.eobedit.generate;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.OpenOption;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ItemsGenerator {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(ItemsGenerator.class);
 
     private static final String TYPES = "src/main/resources/types.txt";
     private static final String CLASSES = "src/main/resources/classes.txt";
@@ -16,9 +21,15 @@ public class ItemsGenerator {
     private static final String DEST = "src/main/java/com/github/martinfrank/eobedit/data/Items.java";
 
     public static void main(String[] args) throws IOException {
-        List<String> typeLines = Files.readAllLines(new File(TYPES).toPath());
-        List<String> classLines = Files.readAllLines(new File(CLASSES).toPath());
-        List<String> itemLines = Files.readAllLines(new File(ITEMS).toPath());
+        List<String> typeLines = Files.readAllLines(new File(TYPES).toPath()).stream().
+                filter(l -> !l.startsWith("#")).
+                filter(l -> !l.trim().isEmpty()).collect(Collectors.toList());
+        List<String> classLines = Files.readAllLines(new File(CLASSES).toPath()).stream().
+                filter(l -> !l.startsWith("#")).
+                filter(l -> !l.trim().isEmpty()).collect(Collectors.toList());
+        List<String> itemLines = Files.readAllLines(new File(ITEMS).toPath()).stream().
+                filter(l -> !l.startsWith("#")).
+                filter(l -> !l.trim().isEmpty()).collect(Collectors.toList());
 
         List<String> itemsLines = new ArrayList<>();
         createItemListHeader(itemsLines);
@@ -46,9 +57,13 @@ public class ItemsGenerator {
 
     private static void createItems(List<String> itemsLines, List<String> itemLines) {
         itemsLines.add("    ");
-        for(String clazz: itemLines){
-            String[] entries = clazz.split(",");
-            itemsLines.add("    public static final Item "+entries[0]+" = new Item(\""+entries[1]+"\", \""+entries[2]+"\", getType(\""+entries[3]+"\"), getClasses(\""+entries[4]+"\"), \""+entries[5]+"\");");
+        for(String item: itemLines){
+            LOGGER.debug("classes: "+item);
+            String[] entries = item.split(",");
+            for (String e: entries){
+                LOGGER.debug("E: "+e);
+            }
+            itemsLines.add("    public static final Item "+entries[0]+" = new Item(\""+entries[1]+"\", \""+entries[2]+"\", getType(\""+entries[3]+"\"), getClasses(\""+entries[4]+"\"), \""+entries[5]+"\", \""+entries[6]+"\");");
         }
 
         itemsLines.add("    public static final Item[] ITEMS = new Item[]{ ");

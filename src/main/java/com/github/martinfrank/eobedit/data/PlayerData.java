@@ -9,6 +9,7 @@ public class PlayerData {
 
     public static final int INVENTORY_LENGTH = 2;
     public static final int INVENTORY_OFFSET = 123;
+    public static final int INVENTORY_SLOT_AMOUNT = 14;
 
     public static final int STATS_LENGTH = 2;
 
@@ -23,6 +24,9 @@ public class PlayerData {
 
     public static final int PROFESSION_OFFSET = 32;
     public static final int PROFESSION_LENGTH = 1;
+
+    public static final int RACE_OFFSET = 31;
+    public static final int RACE_LENGTH = 1;
 
 
     private final byte[] content;
@@ -49,8 +53,8 @@ public class PlayerData {
     }
 
     public Item getInventory(int index){
-        if (index < 0 || index > 12){ //FIXME magic numerb - amout inventory Slots
-            throw new IllegalArgumentException("invalid inventory index (allowed is 0...11)");
+        if (index < 0 || index > INVENTORY_SLOT_AMOUNT){
+            throw new IllegalArgumentException("invalid inventory index (allowed is 0...13)");
         }
         int offset = INVENTORY_OFFSET + index * INVENTORY_LENGTH;
         byte[] data = ByteArrayTool.copy(content, offset, INVENTORY_LENGTH);
@@ -58,8 +62,8 @@ public class PlayerData {
     }
 
     public void setInventory(int index, Item item){
-        if (index < 0 || index > 12){//FIXME magic numerb - amout inventory Slots
-            throw new IllegalArgumentException("invalid inventory index (allowed is 0...11)");
+        if (index < 0 || index > INVENTORY_SLOT_AMOUNT){
+            throw new IllegalArgumentException("invalid inventory index (allowed is 0...13)");
         }
         int offset = INVENTORY_OFFSET + index * INVENTORY_LENGTH;
         ByteArrayTool.set(content, item.id, offset, INVENTORY_LENGTH);
@@ -143,7 +147,7 @@ public class PlayerData {
         ByteArrayTool.set(content, data, EXP_PTS3_OFFSET,EXP_PTS_LENGTH);
     }
 
-    public Profession getProfessions() {
+    public Profession getProfession() {
         byte[] data = ByteArrayTool.copy(content, PROFESSION_OFFSET, PROFESSION_LENGTH);
         for (Profession prof: Profession.values()){
             if (data[0] == prof.id){
@@ -153,4 +157,43 @@ public class PlayerData {
         return null;
     }
 
+    public void setProfession(Profession profession) {
+        byte[] prof = new byte[]{profession.id};
+        ByteArrayTool.set(content, prof, PROFESSION_OFFSET, PROFESSION_LENGTH);
+        int firstLevel = getExpLevelFirst();
+        if (profession.amount == 1){
+            setExpLevelSecond(0);
+            setExpLevelThird(0);
+        }
+        if (profession.amount == 2) {
+            if( getExpLevelSecond() == 0){
+                setExpLevelSecond(firstLevel);
+            }
+            if(getExpLevelThird() != 0){
+                setExpLevelThird(0);
+            }
+        }
+        if (profession.amount == 3) {
+            if( getExpLevelSecond() == 0){
+                setExpLevelSecond(firstLevel);
+            }
+            if(getExpLevelThird() == 0)
+                setExpLevelThird(firstLevel);
+        }
+    }
+
+    public Race getRace() {
+        byte[] data = ByteArrayTool.copy(content, RACE_OFFSET, RACE_LENGTH);
+        for (Race race: Race.values()){
+            if (data[0] == race.id){
+                return race;
+            }
+        }
+        return null;
+    }
+
+    public void setRace(Race race) {
+        byte[] rc = new byte[]{race.id};
+        ByteArrayTool.set(content, rc, RACE_OFFSET, RACE_LENGTH);
+    }
 }

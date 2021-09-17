@@ -1,4 +1,256 @@
-NOTHING,00,00,IT,FRPMCT,nothing,nothing clears inventory space
-ROBE_A,02,00,AR,FRPMCT,Robe,Robe+0
-DAGGER_A,04,00,DA,FRPMCT,Dagger,Dagger+0
-LOCK_PICKS_A,06,00,IT,RT,Lock Picks,Lock Picks
+NOTHING_A,00,00,IT,FRPMCT,nothing,nothing clears inventory space
+LEATHER_ARMOR_A,01,00,AR,FRPMCT,Leather Armor,Leather Armor
+ROBE_A,02,00,AR,FRPMCT,Robe,Robe
+STAFF_A,03,00,PR,FRPMCT,Staff,Staff
+DAGGER_A,04,00,DA,FRPMCT,Dagger,Dagger
+SHORT_SWORD_A,05,00,SE,FRPMCT,Short Sword,Short Sword
+LOCK_PICKS_A,06,00,IT,FRPMCT,Lock Picks,Lock Picks
+SPELL_BOOK_A,07,00,IT,FRPMCT,Spell Book,Spell Book
+HOLY_SYMBOL_CLERIC_A,08,00,IT,FRPMCT,Cleric Holy Symbol,Cleric Holy Symbol
+BOOTS_A,09,00,BO,FRPMCT,Boots,Boots
+IRON_RATION_A,0A,00,FO,FRPMCT,Iron Rations,Iron Rations
+MOUSE_POINTER_A,0B,00,IT,FRPMCT,Mouse Pointer,Mouse Pointer
+MOUSE_POINTER_B,0C,00,IT,FRPMCT,Mouse Pointer,Mouse Pointer
+MOUSE_POINTER_C,0D,00,IT,FRPMCT,Mouse Pointer,Mouse Pointer
+MOUSE_POINTER_D,0E,00,IT,FRPMCT,Mouse Pointer,Mouse Pointer
+MOUSE_POINTER_E,0F,00,IT,FRPMCT,Mouse Pointer,Mouse Pointer
+MOUSE_POINTER_F,10,00,IT,FRPMCT,Mouse Pointer,Mouse Pointer
+KEY_JEWELED_A,11,00,IT,FRPMCT,Jeweled Key,Jeweled Key
+POTION_GIANT_STRENGTH_A,12,00,PO,FRPMCT,Red Potion,Red Potion of Giant Strength
+GEM_BLUE_A,13,00,IT,FRPMC,Blue Gem,Blue Gem
+KEY_SKULL_A,14,00,IT,FRPMC,Skull Key,Skull Key
+WAND_OF_FROST_A,15,00,WA,FRPMCT,Wand of Frost,Wand of Frost
+SCROLL_WEAKNESS,16,00,SC,FRPMCT,Scroll,Scroll about Weakness
+RING_SUSTENANCE_A,17,00,RI,FRPMCT,Ring of Sustenance,Ring of Sustenance
+RING_FEATHER_FALL_A,18,00,RI,FRPMCT,Ring of Feather Fall,Ring of Feather Fall
+RING_PROTECTION_A,19,00,RI,FRPMCT,Ring of Protection,Ring of Protection +2
+ADAMATITE_DART_A,1A,00,DA,FRPMCT,Adamatite Dart,Adamatite Dart +5
+SCROLL_STARS,1B,00,SC,FRPMCT,Scroll,Scroll about Light of Stars
+SCROLL_RIDDLE_A,1C,00,SC,FRPMCT,Scroll,Scroll with Riddle
+SCROLL_ORB_A,1D,00,SC,FRPMCT,Scroll,Scroll warning about Orb
+IRON_RATION_B,1E,00,FO,FRPMCT,Iron Rations,Iron Rations
+HOLY_SYMBOL_PALADIN_A,1F,00,IT,FRPMCT,Paladin Holy Symbol,Paladin Holy Symbol
+WAND_OF_FROST_B,20,00,WA,FRPMCT,Wand of Frost,Wand of Frost
+BONES_DWARF_A,21,00,IT,FRPMCT,Dwarf Bones,Dwarf Bones
+KEY_A,22,00,IT,FRPMCT,Key,Key (golden)
+SCROLL_COMMISION_A,23,00,SC,FRPMCT,Scroll,Commision and Letter of Marque
+AXE_A,24,00,PR,FRPMCT,Axe,Axe
+DAGGER_b,25,00,DA,FRPMCT,Dagger,Dagger
+DART_A,26,00,DA,FRPMCT,Dart,Dart
+ADAMATITE_DART_B,27,00,DA,FRPMCT,Adamatite Dart,Adamatite Dart +4
+HALBERD_A,28,00,TW,FRPMCT,Halberd,Halberd
+CHAIN_MAIL_A,29,00,AR,FRPMCT,Chain Mail,Chain Mail
+HELMET_A,2A,00,HE,FRPMCT,Helmet,Helmet
+HELMET_DWARF_A,2B,00,HE,FRPMCT,Dwarf Helmet,Dwarf Helmet
+KEY_SILVER_A,2C,00,IT,FRPMCT,Silver Key,Silver Key
+ADAMTINE_LONG_SWORD_A,2D,00,PR,FRPMCT,Adamatite Long Sword,Adamatite Long Sword +1
+MACE_A,2E,00,PR,FRPMCT,Mace,Mace
+ADAMTINE_LONG_SWORD_CURSED_A,2F,00,PR,FRPMCT,Adamatite Long Sword,Cursed Adamatite Long Sword -2
+POTION_HEALING_A,30,00,PO,FRPMCT,Blue Potion,Blue Potion of Healing
+GUINSOO,31,00,DA,FRPMCT,Dagger Guinsoo,Dagger Guinsoo +4
+GEM_RED_A,32,00,IT,FRPMCT,Red Gem,Red Gem
+ORB_POWER_A,33,00,IT,FRPMCT,Orb of Power,Orb of Power
+POTION_DWARFEN_HEALING_A,34,00,PO,FRPMCT,Greeb Potion,Green Potion of Dwarfen Healing
+IGNEOUS_ROCK_A,35,00,DA,FRPMCT,Igneous Rock,Igneous Rock +1
+POTION_EXTRA_HEALING_A,36,00,PO,FRPMCT,Blue Potion,Blue Potion of Extra Healing
+RATION_A,37,00,FO,FRPMCT,Ration,Ration
+ROBE_FANCY_A,38,00,AR,FRPMCT,Fancy Robe,Fancy Robe
+ROCK_A,39,00,DA,FRPMCT,Rock,Rock
+IGNEOUS_ROCK_B,3A,00,DA,FRPMCT,Igneous Rock,Igneous Rock +1
+SCROLL_MAGE_DETECT_MAGIC_A,3B,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Detect Magic
+SPEAR_A,3C,00,PR,FRPMCT,Spear,Spear
+STAFF_B,3D,00,PR,FRPMCT,Staff,Staff
+STONE_MEDALLION,3E,00,IT,,FRPMCT,Stone Medallion,Stone Medallion
+RATION_B,3F,00,FO,FRPMCT,Ration,Ration
+BONES_HALFLING_A,40,00,IT,FRPMCT,Halfling Bones,Halfling Bones
+LOCK_PICKS_B,41,00,IT,FRPMCT,Lock Picks,Lock Picks
+ROCK_B,42,00,DA,FRPMCT,Rock,Rock
+DART_B,43,00,DA,FRPMCT,Dart,Dart +2
+RATION_C,44,00,FO,FRPMCT,Ration,Ration
+RATION_D,45,00,FO,FRPMCT,Ration,Ration
+SCROLL_CLERIC_BLESS_A,46,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Bless
+ROCK_C,47,00,DA,FRPMCT,Rock,Rock
+SCROLL_MAGE_ARMOR_A,48,00,SC,FRPMCTC,Mage Scroll,Mage Scroll of Armor
+ARROW_A,49,00,AM,FRPMCTC,Arrow,Arrow
+SHIELD_A,4A,00,SH,FRPMCTC,Shield,Shield
+ARROW_B,4B,00,AM,FRPMCTC,Arrow,Arrow
+RATION_E,4C,00,FO,FRPMCT,Ration,Ration
+RATION_F,4D,00,FO,FRPMCT,Ration,Ration
+BOOTS_B,4E,00,BO,FRPMCT,Boots,Boots
+POTION_HEALING_B,4F,00,PO,FRPMCT,Blue Potion,Blue Potion of Healing
+RATION_G,50,00,FO,FRPMCT,Ration,Ration
+POTION_GIANT_STRENGTH_B,51,00,PO,FRPMCT,Red Potion,Red Potion of Giant Strength
+MACE_B,52,00,PR,FRPMCT,Mace,Mace
+ROCK_D,53,00,DA,FRPMCT,Rock,Rock
+RATION_H,54,00,FO,FRPMCT,Ration,Ration
+BOW_A,55,00,RA,FRPMCT,Bow,Bow
+STONE_DAGGER,56,00,IT,FRPMCT,Stone Dagger,Stone Dagger
+KEY_SILVER_B,57,00,IT,FRPMCT,Silver Key,Silver Key
+SCROLL_MAGE_INVISIBILITY_A,58,00,SC,FRPMCTC,Mage Scroll,Mage Scroll of Armor
+RATION_I,59,00,FO,FRPMCT,Ration,Ration
+RATION_J,5A,00,FO,FRPMCT,Ration,Ration
+SCROLL_MAGE_SHIELD_A,5B,00,SC,FRPMCTC,Mage Scroll,Mage Scroll of Shield
+SLING_A,5C,00,RA,FRPMCTC,Sling,Sling
+ARROW_C,5D,00,AM,FRPMCTC,Arrow,Arrow
+RATION_K,5E,00,FO,FRPMCT,Ration,Ration
+POTION_HEALING_C,5F,00,PO,FRPMCT,Blue Potion,Blue Potion of Healing
+ROCK_E,60,00,DA,FRPMCT,Rock,Rock
+AXE_B,61,00,PR,FRPMCT,Axe,Axe
+CHAIN_MAIL_B,62,00,AR,FRPMCT,Chain Mail,Chain Mail
+ARROW_D,63,00,AM,FRPMCTC,Arrow,Arrow
+CHAIN_MAIL_C,64,00,AR,FRPMCT,Chain Mail,Chain Mail
+SHIELD_B,65,00,SH,FRPMCTC,Shield,Shield
+ARROW_E,66,00,AM,FRPMCTC,Arrow,Arrow
+IRON_RATION_C,67,00,FO,FRPMCT,Iron Rations,Iron Rations
+IRON_RATION_D,68,00,FO,FRPMCT,Iron Rations,Iron Rations
+KEY_SILVER_C,69,00,IT,FRPMCT,Silver Key,Silver Key
+HELMET_DWARF_B,6A,00,HE,FRPMCT,Dwarf Helmet,Dwarf Helmet
+GEM_BLUE_B,6B,00,IT,FRPMC,Blue Gem,Blue Gem
+ARROW_F,6C,00,AM,FRPMCTC,Arrow,Arrow
+POTION_HEALING_D,6D,00,PO,FRPMCT,Blue Potion,Blue Potion of Healing
+POTION_EXTRA_HEALING_B,6E,00,PO,FRPMCT,Blue Potion,Blue Potion of Healing
+SCROLL_MAGE_DETECT_MAGIC_B,6F,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Detect Magic
+BACKSTABBER,70,00,DA,FRPMCT,Backstabber,Dagger Backstabber +3
+RATION_L,71,00,FO,FRPMCT,Ration,Ration
+SHIELD_C,72,00,SH,FRPMCTC,Shield,Shield
+RATION_M,73,00,FO,FRPMCT,Ration,Ration
+POTION_HEALING_E,74,00,PO,FRPMCT,Blue Potion,Blue Potion of Healing
+ROCK_F,75,00,DA,FRPMCT,Rock,Rock
+SCROLL_CLERIC_FLAME_BLADE_A,76,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Bless
+ROCK_G,77,00,DA,FRPMCT,Rock,Rock
+SCROLL_MAGE_FIREBALL_A,78,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Fireball
+SCROLL_CLERIC_LIGHT_WOUNDS_A,79,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Light Wounds
+GEM_RED_B,7A,00,IT,FRPMCT,Red Gem,Red Gem
+ARROW_G,7B,00,AM,FRPMCTC,Arrow,Arrow
+ROCK_H,7C,00,DA,FRPMCT,Rock,Rock
+LONG_SWORD_A,7D,00,PR,FRPMCT,Long Sword,Long Sword
+WAND_OF_MAGIC_MISSILE_A,7E,00,WA,FRPMCT,Wand of Magic Missile,Wand of Magic Missile
+ARROW_H,7F,00,AM,FRPMCTC,Arrow,Arrow
+MACE_C,80,00,PR,FRPMCT,Mace,Mace
+RING_PROTECTION_B,81,00,RI,FRPMCT,Ring of Protection,Ring of Protection +3
+KEY_DWARFEN_A,82,00,IT,FRPMCT,Dwarfen Key,Dwarfen Key
+ARROW_I,83,00,AM,FRPMCTC,Arrow,Arrow
+RING_ADORNMENT_A,84,00,RI,FRPMCT,Ring of Adornment,Ring of Adornment
+ROCK_I,85,00,DA,FRPMCT,Rock,Rock
+POTION_HEALING_F,86,00,PO,FRPMCT,Blue Potion,Blue Potion of Healing
+MACE_D,87,00,PR,FRPMCT,Mace,Mace
+POTION_CURE_POISON_A,88,00,PO,FRPMCT,Blue Potion,Blue Potion of Cure Poison
+POTION_CURE_POISON_B,89,00,PO,FRPMCT,Blue Potion,Blue Potion of Cure Poison
+MEDALLION_OF_ADORNMENT_A,8A,00,AM,FRPMCT,Amulet of Adornment,Amulet of Adornment
+ROBE_B,8B,00,AR,FRPMCT,Fancy Robe,Fancy Robe
+DROW_CLEAVER,8C,00,TW,FRPMCT,Drow Cleaver,Drow Cleaver +3
+STONE_SCEPTER,8D,00,IT,FRPMCT,Stone Scepter,Stone Scepter
+WAND_OF_FROST_C,8E,00,WA,FRPMCT,Wand of Frost,Wand of Frost
+POTION_HEALING_G,8F,00,PO,FRPMCT,Blue Potion,Blue Potion of Healing
+SCROLL_MAGE_FLAME_ARROW_A,90,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Flame Arrow
+SCROLL_CLERIC_SLOW_POISON_A,91,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Light Wounds
+IRON_RATION_E,92,00,FO,FRPMCT,Iron Rations,Iron Rations
+IRON_RATION_F,93,00,FO,FRPMCT,Iron Rations,Iron Rations
+IRON_RATION_G,94,00,FO,FRPMCT,Iron Rations,Iron Rations
+HELMET_DWARF_C,95,00,HE,FRPMCT,Dwarf Helmet,Dwarf Helmet
+SHIELD_DWARFEN_A,96,00,SH,FRPMCT,Dwarfen Shield,Dwarfen Shield
+ROCK_J,97,00,DA,FRPMCT,Rock,Rock
+ARROW_J,98,00,AM,FRPMCTC,Arrow,Arrow
+KEY_DWARFEN_B,99,00,IT,FRPMCT,Dwarfen Key,Dwarfen Key
+ROCK_K,9A,00,DA,FRPMCT,Rock,Rock
+SCROLL_CLERIC_HOLD_PERSON_A,9B,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Hold Person
+IRON_RATION_H,9C,00,FO,FRPMCT,Iron Rations,Iron Rations
+SPEAR_B,9D,00,PR,FRPMCT,Spear,Spear
+STONE_AMULETT,9E,00,IT,FRPMCT,Stone Amulett,Stone Amulett
+SCROLL_CLERIC_AID_A,9F,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Aid
+SCROLL_MAGE_HASTE_A,A0,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Haste
+IRON_RATION_I,A1,00,FO,FRPMCT,Iron Rations,Iron Rations
+SCROLL_CLERIC_DETECT_MAGIC_A,A2,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Detect Magic
+IRON_RATION_J,A3,00,FO,FRPMCT,Iron Rations,Iron Rations
+LONG_SWORD_B,A4,00,PR,FRPMCT,Long Sword,Long Sword
+IRON_RATION_K,A5,00,FO,FRPMCT,Iron Rations,Iron Rations
+SCROLL_COMMISION_B,A6,00,SC,FRPMCT,Scroll,Commision and Letter of Marque
+POTION_POISON_A,A7,00,PO,FRPMCT,Green Potion,Green Potion of Poison
+IRON_RATION_L,A8,00,FO,FRPMCT,Iron Rations,Iron Rations
+SCROLL_MAGE_DISPEL_MAGIC_A,A9,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Dispel Magic
+ROCK_L,AA,00,DA,FRPMCT,Rock,Rock
+PLATE_MAIL_A,AB,00,AR,FRPMCT,Plate Mail,Plate Mail
+KEY_DWARFEN_C,AC,00,IT,FRPMCT,Dwarfen Key,Dwarfen Key
+SCALE_MAIL_A,AD,00,AR,FRPMC,Scale Mail,Scale Mail
+AXE_CURSED_A,AE,00,PR,FRPMC,Axe,Cursed Axe -3
+SLING_CURSED_A,AF,00,RA,FRPMC,Sling,Cursed Sling -3
+KEY_B,B0,00,IT,FRPMCT,Key,Key (golden)
+RING_FEATHER_FALL_B,B1,00,RI,FRPMCT,Ring of Feather Fall,Ring of Feather Fall
+SCROLL_MAGE_INVISIBILITY_10_A,B2,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Invisiblity 10
+KEY_C,B3,00,IT,FRPMCT,Key,Key (golden)
+SCROLL_CLERIC_PRAYER_A,B4,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Prayer
+BOOTS_C,B5,00,BO,FRPMCT,Boots,Boots
+KENKU_EGG_A,B6,00,IT,FRPMCT,Kenku Egg,Kenku Egg
+KENKU_EGG_B,B7,00,IT,FRPMCT,Kenku Egg,Kenku Egg
+KENKU_EGG_C,B8,00,IT,FRPMCT,Kenku Egg,Kenku Egg
+KENKU_EGG_D,B9,00,IT,FRPMCT,Kenku Egg,Kenku Egg
+KENKU_EGG_E,BA,00,IT,FRPMCT,Kenku Egg,Kenku Egg
+KENKU_EGG_F,BB,00,IT,FRPMCT,Kenku Egg,Kenku Egg
+KENKU_EGG_G,BC,00,IT,FRPMCT,Kenku Egg,Kenku Egg
+KENKU_EGG_H,BD,00,IT,FRPMCT,Kenku Egg,Kenku Egg
+KENKU_EGG_I,BE,00,IT,FRPMCT,Kenku Egg,Kenku Egg
+KENKU_EGG_J,BF,00,IT,FRPMCT,Kenku Egg,Kenku Egg
+KEY_DWARFEN_D,C0,00,IT,FRPMCT,Dwarfen Key,Dwarfen Key
+KEY_DWARFEN_E,C1,00,IT,FRPMCT,Dwarfen Key,Dwarfen Key
+SCROLL_MAGE_HOLD_PERSON_A,C2,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Hold Person
+STONE_RING,C3,00,IT,FRPMCT,Stone Ring,Stone Ring
+ROCK_M,C4,00,DA,FRPMCT,Rock,Rock
+SCROLL_CLERIC_DISPEL_MAGIC_A,C5,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Dispel Magic
+SCROLL_CLERIC_CURE_SERIOUS_WOUNDS_A,C6,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Cure Serious Wound
+KEY_D,C7,00,IT,FRPMCT,Key,Key (golden)
+NOTHING_B,C8,00,IT,FRPMCT,nothing,nothing clears inventory space
+NOTHING_C,C9,00,IT,FRPMCT,nothing,nothing clears inventory space
+NOTHING_D,CA,00,IT,FRPMCT,nothing,nothing clears inventory space
+NOTHING_E,CB,00,IT,FRPMCT,nothing,nothing clears inventory space
+NOTHING_F,CC,00,IT,FRPMCT,nothing,nothing clears inventory space
+NOTHING_G,CD,00,IT,FRPMCT,nothing,nothing clears inventory space
+SHIELD_DWARFEN_B,CE,00,SH,FRPMCT,Dwarfen Shield,Dwarfen Shield
+ROCK_N,CF,00,PR,FRPMCT,Rock,Rock
+MACE_E,D0,00,PR,FRPMCT,Mace,Mace +3
+BRACERS_A,D1,00,BR,FRPMCT,Bracers,Bracers
+WAND_OF_MAGIC_MISSILE_B,D2,00,WA,FRPMCT,Wand of Magic Missile,Wand of Magic Missile
+KEY_DWARFEN_F,D3,00,IT,FRPMCT,Dwarfen Key,Dwarfen Key
+RING_ADORNMENT_B,D4,00,RI,FRPMCT,Ring of Adornment,Ring of Adornment
+SCROLL_CLERIC_FLAME_BLADE_B,D5,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Bless
+SCROLL_MAGE_FIREBALL_B,D6,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Fireball
+HALBERD_CHIFTAIN,D7,00,TW,FRPMCT,Halberd,Chiftain Halberd +5
+IRON_RATION_M,D8,00,FO,FRPMCT,Iron Rations,Iron Rations
+AMULETTE_ADORNMENT_A,D9,00,AM,FRPMCT,Necklace of Adornment,Necklace of Adornment
+SCROLL_CLERIC_BLESS_B,DA,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Bless
+ARROW_K,DB,00,AM,FRPMCTC,Arrow,Arrow
+SCROLL_CLERIC_PROTCT_EVIL_10_A,DC,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Protect Evil 10
+SCROLL_CLERIC_REMOVE_PARALYSE_A,DD,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Remove Paralyse
+SCROLL_CLERIC_SLOW_POISON_B,DE,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Remove Paralyse
+SCROLL_CLERIC_CREATE_FOOD_A,DF,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Create Food
+KEY_E,E0,00,IT,FRPMCT,Key,Key (golden)
+AMULETT_LUCK_A,E1,00,AM,FRPMCT,Luck Stone Medallion,Luck Stone Medallion
+RING_PROTECTION_C,E2,00,RI,FRPMCT,Ring of Protection,Ring of Protection +2
+ARROW_L,E3,00,AM,FRPMCTC,Arrow,Arrow
+ARROW_M,E4,00,AM,FRPMCTC,Arrow,Arrow
+ARROW_N,E5,00,AM,FRPMCTC,Arrow,Arrow
+ARROW_O,E6,00,AM,FRPMCTC,Arrow,Arrow
+SLICER,E7,00,SE,FRPMCTC,Slicer,Slicer +3
+BRACERS_AB,E8,00,BR,FRPMCT,Bracers,Bracers +3
+RING_WIZARDRY,E9,00,RI,FRPMCT,Ring of Wizardry,Ring of Wizardry
+SCROLL_MAGE_FEAR_A,EA,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Fireball
+KEY_JEWELED_B,EB,00,IT,FRPMCT,Jeweled Key,Jeweled Key
+BANDED_MAIL_A,EC,00,AR,FRPMCT,Banded Mail,Banded Mail
+ARROW_P,ED,00,AM,FRPMCTC,Arrow,Arrow
+ARROW_Q,EE,00,AM,FRPMCTC,Arrow,Arrow
+ARROW_R,EF,00,AM,FRPMCTC,Arrow,Arrow
+KEY_DROW_A,F0,00,IT,FRPMCT,Drow Key,Drow Key
+SCROLL_MAGE_LIGHTNING_BOLT_A,F1,00,SC,FRPMCT,Mage Scroll,Mage Scroll of Lightning Bolt
+KEY_F,F2,00,IT,FRPMCT,Key,Key (golden)
+POTION_HEALING_H,F3,00,PO,FRPMCT,Blue Potion,Blue Potion of Healing
+KEY_DROW_B,F4,00,IT,FRPMCT,Drow Key,Drow Key
+SCROLL_CLERIC_CURE_LIGHT_WOUNDS_A,F5,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Cure Light Wound
+KEY_JEWELED_C,F6,00,IT,FRPMCT,Jeweled Key,Jeweled Key
+KEY_RUBY_A,F7,00,IT,FRPMCT,Ruby Key,Ruby Key
+IGNEOUS_ROCK_C,F8,00,DA,FRPMCT,Rock,Rock +1
+WAND_OF_STICK_A,F9,00,WA,FRPMCT,Wand of Stick,Wand of Stick
+SHIELD_D,Fa,00,SH,FRPMCTC,Shield,Shield
+SCROLL_CLERIC_PRAYER_B,FB,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Prayer
+SCROLL_CLERIC_NEUTRALIZE_POISON_A,FC,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Prayer
+SCROLL_CLERIC_CURE_CRITICAL_WOUNDS_A,FD,00,SC,FRPMCT,Cleric Scroll,Cleric Scroll of Cure Critical Wound
+AMULETTE_ADORNMENT_B,FE,00,AM,FRPMCT,Necklace of Adornment,Necklace of Adornment
+RING_ADORNMENT_C,FF,00,RI,FRPMCT,Ring of Adornment,Ring of Adornment
