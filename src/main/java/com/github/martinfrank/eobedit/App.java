@@ -21,31 +21,33 @@ public class App {
         }
         SavegameFile file = new SavegameFile(args[0]);
         PlayerData p = file.getPlayer(0);
-//        int start = 0 * PlayerData.INVENTORY_SLOT_AMOUNT; int low = 1;
-//        for(int i = 0; i < PlayerData.INVENTORY_SLOT_AMOUNT; i++){
-//            int high = start + i;
-//            Item unknown = new Item(high, low);
-//            LOGGER.debug("setting 0x{} at {}",Integer.toHexString(high),i);
-//            p.setInventory(i, unknown);
-//        }
-        Profession profession = p.getProfession();
-        LOGGER.debug("current profession: {}",profession);
-        Profession newJob = Profession.FIGHTER_CLERIC_MAGE;
-        p.setProfession(newJob);
-        profession = p.getProfession();
-        Race newRace = Race.HALFLING_MALE;
-        p.setRace(newRace);
-        LOGGER.debug("upddated profession: {}",profession);
+        int start = 9 * PlayerData.INVENTORY_SLOT_AMOUNT; int low = 1;
+        for(int i = 0; i < PlayerData.INVENTORY_SLOT_AMOUNT; i++){
+            int high = start + i;
+            Item unknown = new Item(high, low);
+            LOGGER.debug("setting 0x{} 0x{} at {}",Integer.toHexString(high),Integer.toHexString(low),i);
+            p.setInventory(i, unknown);
+        }
+
+
+//        Profession profession = p.getProfession();
+//        LOGGER.debug("current profession: {}",profession);
+//        Profession newJob = Profession.FIGHTER_CLERIC_MAGE;
+//        p.setProfession(newJob);
+//        profession = p.getProfession();
+//        Race newRace = Race.HALFLING_MALE;
+//        p.setRace(newRace);
+//        LOGGER.debug("upddated profession: {}",profession);
 
         Item it = Items.ADAMATITE_DART_A;
 
 
-        for(int i = 0; i < 4; i++){
-            PlayerData pd = file.getPlayer(i);
-            LOGGER.debug("Player {}, race {}, prof {}",pd.getName(), pd.getRace(), pd.getProfession());
-        }
+//        for(int i = 0; i < 4; i++){
+//            PlayerData pd = file.getPlayer(i);
+//            LOGGER.debug("Player {}, race {}, prof {}",pd.getName(), pd.getRace(), pd.getProfession());
+//        }
 
-//        file.save();
+        file.save();
     }
 
 }

@@ -109,8 +109,7 @@ public class Items {
     public static final Item BOOTS_A = new Item("09", "00", getType("BO"), getClasses("FRPMCT"), "Boots", "Boots");
     public static final Item IRON_RATION_A = new Item("0A", "00", getType("FO"), getClasses("FRPMCT"), "Iron Rations", "Iron Rations");
     public static final Item MOUSE_POINTER_A = new Item("0B", "00", getType("IT"), getClasses("FRPMCT"), "Mouse Pointer", "Mouse Pointer");
-    public static final Item MOUSE_POINTER_B = new Item("0C", "00", getType("IT"), getClasses("FRPMCT"), "Mouse Pointer", "Mouse Pointer");
-    public static final Item MOUSE_POINTER_C = new Item("0D", "00", getType("IT"), getClasses("FRPMCT"), "Mouse Pointer", "Mouse Pointer");
+    public static final Item MOUSE_POINTER_B = new Item("0C", "00", getType("IT"), getClasses("FRPMCT"), "Mouse Pointer", "Mouse PointerMOUSE_POINTER_C");
     public static final Item MOUSE_POINTER_D = new Item("0E", "00", getType("IT"), getClasses("FRPMCT"), "Mouse Pointer", "Mouse Pointer");
     public static final Item MOUSE_POINTER_E = new Item("0F", "00", getType("IT"), getClasses("FRPMCT"), "Mouse Pointer", "Mouse Pointer");
     public static final Item MOUSE_POINTER_F = new Item("10", "00", getType("IT"), getClasses("FRPMCT"), "Mouse Pointer", "Mouse Pointer");
@@ -134,7 +133,7 @@ public class Items {
     public static final Item KEY_A = new Item("22", "00", getType("IT"), getClasses("FRPMCT"), "Key", "Key (golden)");
     public static final Item SCROLL_COMMISION_A = new Item("23", "00", getType("SC"), getClasses("FRPMCT"), "Scroll", "Commision and Letter of Marque");
     public static final Item AXE_A = new Item("24", "00", getType("PR"), getClasses("FRPMCT"), "Axe", "Axe");
-    public static final Item DAGGER_b = new Item("25", "00", getType("DA"), getClasses("FRPMCT"), "Dagger", "Dagger");
+    public static final Item DAGGER_B = new Item("25", "00", getType("DA"), getClasses("FRPMCT"), "Dagger", "Dagger");
     public static final Item DART_A = new Item("26", "00", getType("DA"), getClasses("FRPMCT"), "Dart", "Dart");
     public static final Item ADAMATITE_DART_B = new Item("27", "00", getType("DA"), getClasses("FRPMCT"), "Adamatite Dart", "Adamatite Dart +4");
     public static final Item HALBERD_A = new Item("28", "00", getType("TW"), getClasses("FRPMCT"), "Halberd", "Halberd");
@@ -159,7 +158,7 @@ public class Items {
     public static final Item SCROLL_MAGE_DETECT_MAGIC_A = new Item("3B", "00", getType("SC"), getClasses("FRPMCT"), "Mage Scroll", "Mage Scroll of Detect Magic");
     public static final Item SPEAR_A = new Item("3C", "00", getType("PR"), getClasses("FRPMCT"), "Spear", "Spear");
     public static final Item STAFF_B = new Item("3D", "00", getType("PR"), getClasses("FRPMCT"), "Staff", "Staff");
-    public static final Item STONE_MEDALLION = new Item("3E", "00", getType("IT"), getClasses(""), "FRPMCT", "Stone Medallion");
+    public static final Item STONE_MEDALLION = new Item("3E", "00", getType("IT"), getClasses("FRPMCT"), "Stone Medallion", "Stone Medallion");
     public static final Item RATION_B = new Item("3F", "00", getType("FO"), getClasses("FRPMCT"), "Ration", "Ration");
     public static final Item BONES_HALFLING_A = new Item("40", "00", getType("IT"), getClasses("FRPMCT"), "Halfling Bones", "Halfling Bones");
     public static final Item LOCK_PICKS_B = new Item("41", "00", getType("IT"), getClasses("FRPMCT"), "Lock Picks", "Lock Picks");
@@ -185,7 +184,7 @@ public class Items {
     public static final Item BOW_A = new Item("55", "00", getType("RA"), getClasses("FRPMCT"), "Bow", "Bow");
     public static final Item STONE_DAGGER = new Item("56", "00", getType("IT"), getClasses("FRPMCT"), "Stone Dagger", "Stone Dagger");
     public static final Item KEY_SILVER_B = new Item("57", "00", getType("IT"), getClasses("FRPMCT"), "Silver Key", "Silver Key");
-    public static final Item SCROLL_MAGE_INVISIBILITY_A = new Item("58", "00", getType("SC"), getClasses("FRPMCTC"), "Mage Scroll", "Mage Scroll of Armor");
+    public static final Item SCROLL_MAGE_INVISIBILITY_A = new Item("58", "00", getType("SC"), getClasses("FRPMCTC"), "Mage Scroll", "Mage Scroll of Invisibility");
     public static final Item RATION_I = new Item("59", "00", getType("FO"), getClasses("FRPMCT"), "Ration", "Ration");
     public static final Item RATION_J = new Item("5A", "00", getType("FO"), getClasses("FRPMCT"), "Ration", "Ration");
     public static final Item SCROLL_MAGE_SHIELD_A = new Item("5B", "00", getType("SC"), getClasses("FRPMCTC"), "Mage Scroll", "Mage Scroll of Shield");
@@ -215,7 +214,7 @@ public class Items {
     public static final Item RATION_M = new Item("73", "00", getType("FO"), getClasses("FRPMCT"), "Ration", "Ration");
     public static final Item POTION_HEALING_E = new Item("74", "00", getType("PO"), getClasses("FRPMCT"), "Blue Potion", "Blue Potion of Healing");
     public static final Item ROCK_F = new Item("75", "00", getType("DA"), getClasses("FRPMCT"), "Rock", "Rock");
-    public static final Item SCROLL_CLERIC_FLAME_BLADE_A = new Item("76", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Bless");
+    public static final Item SCROLL_CLERIC_FLAME_BLADE_A = new Item("76", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Flame Blade");
     public static final Item ROCK_G = new Item("77", "00", getType("DA"), getClasses("FRPMCT"), "Rock", "Rock");
     public static final Item SCROLL_MAGE_FIREBALL_A = new Item("78", "00", getType("SC"), getClasses("FRPMCT"), "Mage Scroll", "Mage Scroll of Fireball");
     public static final Item SCROLL_CLERIC_LIGHT_WOUNDS_A = new Item("79", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Light Wounds");
@@ -242,7 +241,7 @@ public class Items {
     public static final Item WAND_OF_FROST_C = new Item("8E", "00", getType("WA"), getClasses("FRPMCT"), "Wand of Frost", "Wand of Frost");
     public static final Item POTION_HEALING_G = new Item("8F", "00", getType("PO"), getClasses("FRPMCT"), "Blue Potion", "Blue Potion of Healing");
     public static final Item SCROLL_MAGE_FLAME_ARROW_A = new Item("90", "00", getType("SC"), getClasses("FRPMCT"), "Mage Scroll", "Mage Scroll of Flame Arrow");
-    public static final Item SCROLL_CLERIC_SLOW_POISON_A = new Item("91", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Light Wounds");
+    public static final Item SCROLL_CLERIC_SLOW_POISON_A = new Item("91", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Slow Poison");
     public static final Item IRON_RATION_E = new Item("92", "00", getType("FO"), getClasses("FRPMCT"), "Iron Rations", "Iron Rations");
     public static final Item IRON_RATION_F = new Item("93", "00", getType("FO"), getClasses("FRPMCT"), "Iron Rations", "Iron Rations");
     public static final Item IRON_RATION_G = new Item("94", "00", getType("FO"), getClasses("FRPMCT"), "Iron Rations", "Iron Rations");
@@ -310,7 +309,7 @@ public class Items {
     public static final Item WAND_OF_MAGIC_MISSILE_B = new Item("D2", "00", getType("WA"), getClasses("FRPMCT"), "Wand of Magic Missile", "Wand of Magic Missile");
     public static final Item KEY_DWARFEN_F = new Item("D3", "00", getType("IT"), getClasses("FRPMCT"), "Dwarfen Key", "Dwarfen Key");
     public static final Item RING_ADORNMENT_B = new Item("D4", "00", getType("RI"), getClasses("FRPMCT"), "Ring of Adornment", "Ring of Adornment");
-    public static final Item SCROLL_CLERIC_FLAME_BLADE_B = new Item("D5", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Bless");
+    public static final Item SCROLL_CLERIC_FLAME_BLADE_B = new Item("D5", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Flame Blade");
     public static final Item SCROLL_MAGE_FIREBALL_B = new Item("D6", "00", getType("SC"), getClasses("FRPMCT"), "Mage Scroll", "Mage Scroll of Fireball");
     public static final Item HALBERD_CHIFTAIN = new Item("D7", "00", getType("TW"), getClasses("FRPMCT"), "Halberd", "Chiftain Halberd +5");
     public static final Item IRON_RATION_M = new Item("D8", "00", getType("FO"), getClasses("FRPMCT"), "Iron Rations", "Iron Rations");
@@ -318,7 +317,7 @@ public class Items {
     public static final Item SCROLL_CLERIC_BLESS_B = new Item("DA", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Bless");
     public static final Item ARROW_K = new Item("DB", "00", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
     public static final Item SCROLL_CLERIC_PROTCT_EVIL_10_A = new Item("DC", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Protect Evil 10");
-    public static final Item SCROLL_CLERIC_REMOVE_PARALYSE_A = new Item("DD", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Remove Paralyse");
+    public static final Item SCROLL_CLERIC_REMOVE_PARALYSIS_A = new Item("DD", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Remove Paralyse");
     public static final Item SCROLL_CLERIC_SLOW_POISON_B = new Item("DE", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Remove Paralyse");
     public static final Item SCROLL_CLERIC_CREATE_FOOD_A = new Item("DF", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Create Food");
     public static final Item KEY_E = new Item("E0", "00", getType("IT"), getClasses("FRPMCT"), "Key", "Key (golden)");
@@ -329,7 +328,7 @@ public class Items {
     public static final Item ARROW_N = new Item("E5", "00", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
     public static final Item ARROW_O = new Item("E6", "00", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
     public static final Item SLICER = new Item("E7", "00", getType("SE"), getClasses("FRPMCTC"), "Slicer", "Slicer +3");
-    public static final Item BRACERS_AB = new Item("E8", "00", getType("BR"), getClasses("FRPMCT"), "Bracers", "Bracers +3");
+    public static final Item BRACERS_DROW_B = new Item("E8", "00", getType("BR"), getClasses("FRPMCT"), "Bracers", "Bracers +3");
     public static final Item RING_WIZARDRY = new Item("E9", "00", getType("RI"), getClasses("FRPMCT"), "Ring of Wizardry", "Ring of Wizardry");
     public static final Item SCROLL_MAGE_FEAR_A = new Item("EA", "00", getType("SC"), getClasses("FRPMCT"), "Mage Scroll", "Mage Scroll of Fireball");
     public static final Item KEY_JEWELED_B = new Item("EB", "00", getType("IT"), getClasses("FRPMCT"), "Jeweled Key", "Jeweled Key");
@@ -347,12 +346,137 @@ public class Items {
     public static final Item KEY_RUBY_A = new Item("F7", "00", getType("IT"), getClasses("FRPMCT"), "Ruby Key", "Ruby Key");
     public static final Item IGNEOUS_ROCK_C = new Item("F8", "00", getType("DA"), getClasses("FRPMCT"), "Rock", "Rock +1");
     public static final Item WAND_OF_STICK_A = new Item("F9", "00", getType("WA"), getClasses("FRPMCT"), "Wand of Stick", "Wand of Stick");
-    public static final Item SHIELD_D = new Item("Fa", "00", getType("SH"), getClasses("FRPMCTC"), "Shield", "Shield");
+    public static final Item SHIELD_D = new Item("FA", "00", getType("SH"), getClasses("FRPMCTC"), "Shield", "Shield");
     public static final Item SCROLL_CLERIC_PRAYER_B = new Item("FB", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Prayer");
-    public static final Item SCROLL_CLERIC_NEUTRALIZE_POISON_A = new Item("FC", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Prayer");
+    public static final Item SCROLL_CLERIC_NEUTRALIZE_POISON_A = new Item("FC", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Neutralize Poison");
     public static final Item SCROLL_CLERIC_CURE_CRITICAL_WOUNDS_A = new Item("FD", "00", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Cure Critical Wound");
     public static final Item AMULETTE_ADORNMENT_B = new Item("FE", "00", getType("AM"), getClasses("FRPMCT"), "Necklace of Adornment", "Necklace of Adornment");
     public static final Item RING_ADORNMENT_C = new Item("FF", "00", getType("RI"), getClasses("FRPMCT"), "Ring of Adornment", "Ring of Adornment");
+    public static final Item RING_SUSTENANCE_B = new Item("00", "01", getType("RI"), getClasses("FRPMCT"), "Ring of Sustenance", "Ring of Sustenance");
+    public static final Item NIGHT_STALKER = new Item("01", "00", getType("PR"), getClasses("FRPMCTC"), "Night Stalker", "Night Stalker +3");
+    public static final Item SCROLL_CLERIC_HOLD_PERSON_B = new Item("02", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Hold Person");
+    public static final Item IGNEOUS_ROCK_D = new Item("03", "01", getType("DA"), getClasses("FRPMCT"), "Rock", "Rock +1");
+    public static final Item KEY_RUBY_B = new Item("04", "01", getType("IT"), getClasses("FRPMCT"), "Ruby Key", "Ruby Key");
+    public static final Item SCROLL_MAGE_INVISIBILITY_10_B = new Item("05", "01", getType("SC"), getClasses("FRPMCT"), "Mage Scroll", "Mage Scroll of Invisiblity 10");
+    public static final Item DROW_BOW_A = new Item("06", "01", getType("RA"), getClasses("FRPMCT"), "Drow Bow", "Drow Bow");
+    public static final Item SCROLL_CLERIC_PROTECT_EVIL_A = new Item("07", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Protect Evil");
+    public static final Item BOOTS_DROW_A = new Item("09", "00", getType("BO"), getClasses("FRPMCT"), "Drow Boots", "Drow Boots");
+    public static final Item POTION_EXTRA_HEALING_C = new Item("0A", "01", getType("PO"), getClasses("FRPMCT"), "Blue Potion", "Blue Potion of Extra Healing");
+    public static final Item SCROLL_CLERIC_RAISE_DEAD_A = new Item("0B", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Raise Dead");
+    public static final Item KEY_RUBY_C = new Item("0C", "01", getType("IT"), getClasses("FRPMCT"), "Ruby Key", "Ruby Key");
+    public static final Item KEY_DROW_C = new Item("0D", "01", getType("IT"), getClasses("FRPMCT"), "Drow Key", "Drow Key");
+    public static final Item KEY_JEWELED_D = new Item("0E", "01", getType("IT"), getClasses("FRPMCT"), "Jeweled Key", "Jeweled Key");
+    public static final Item SCROLL_MAGE_SHIELD_B = new Item("0F", "01", getType("SC"), getClasses("FRPMCTC"), "Mage Scroll", "Mage Scroll of Shield");
+    public static final Item WAND_OF_LIGHTNING_A = new Item("10", "01", getType("WA"), getClasses("FRPMCT"), "Wand of Lightning", "Wand of Lightning");
+    public static final Item PLATE_MAIL_GREAT_BEAUTY_A = new Item("11", "01", getType("AR"), getClasses("FRPMCT"), "Plate Mail", "Plate Mail");
+    public static final Item FLAIL_A = new Item("12", "01", getType("PR"), getClasses("FRPMCT"), "Flail", "Flail");
+    public static final Item KEY_DROW_D = new Item("12", "01", getType("IT"), getClasses("FRPMCT"), "Drow Key", "Drow Key");
+    public static final Item ROBE_C = new Item("13", "01", getType("AR"), getClasses("FRPMCT"), "Robe", "Robe");
+    public static final Item SCEPTER_OF_KINGLY_MIGHT = new Item("14", "01", getType("IT"), getClasses("FRPMCT"), "Scepter of Kinlgy Might", "Scepter of Kinlgy Might");
+    public static final Item SCROLL_MAGE_ICESTORM_A = new Item("15", "01", getType("SC"), getClasses("FRPMCT"), "Mage Scroll", "Mage Scroll of Ice Storm");
+    public static final Item LOCK_PICKS_C = new Item("17", "01", getType("IT"), getClasses("FRPMCT"), "Lock Picks", "Lock Picks");
+    public static final Item KEY_DROW_E = new Item("18", "01", getType("IT"), getClasses("FRPMCT"), "Drow Key", "Drow Key");
+    public static final Item SCROLL_CLERIC_DETECT_MAGIC_B = new Item("19", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Detect Magic");
+    public static final Item POTION_POISON_B = new Item("1A", "01", getType("PO"), getClasses("FRPMCT"), "Green Potion", "Green Potion of Poison");
+    public static final Item SCROLL_MAGE_STONESKIN_A = new Item("1B", "01", getType("SC"), getClasses("FRPMCT"), "Mage Scroll", "Mage Scroll of Detect Magic");
+    public static final Item ARROW_S = new Item("1C", "01", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
+    public static final Item ARROW_T = new Item("1D", "01", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
+    public static final Item ARROW_U = new Item("1E", "01", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
+    public static final Item KEY_DROW_F = new Item("1F", "01", getType("IT"), getClasses("FRPMCT"), "Drow Key", "Drow Key");
+    public static final Item SCROLL_CLERIC_DISPEL_MAGIC_B = new Item("20", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Dispel Magic");
+    public static final Item SCROLL_CLERIC_CURE_SERIOUS_WOUNDS_B = new Item("21", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Cure Serious Wound");
+    public static final Item SCROLL_MAGE_INVISIBILITY_B = new Item("22", "01", getType("SC"), getClasses("FRPMCTC"), "Mage Scroll", "Mage Scroll of Invisibility");
+    public static final Item SCROLL_CLERIC_FLAME_BLADE_C = new Item("23", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Flame Blade");
+    public static final Item SCROLL_CLERIC_PROTCT_EVIL_10_B = new Item("24", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Protect Evil 10");
+    public static final Item SCROLL_MAGE_ARMOR_B = new Item("25", "01", getType("SC"), getClasses("FRPMCTC"), "Mage Scroll", "Mage Scroll of Armor");
+    public static final Item SHIELD_DROW_A = new Item("26", "01", getType("SH"), getClasses("FRPMCT"), "Drow Shield", "Drow Shield +3");
+    public static final Item SCROLL_CLERIC_RAISE_DEAD_B = new Item("27", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Raise Dead");
+    public static final Item BOOTS_DROW_B = new Item("28", "01", getType("BO"), getClasses("FRPMCT"), "Drow Boots", "Drow Boots");
+    public static final Item POTION_EXTRA_HEALING_D = new Item("29", "01", getType("PO"), getClasses("FRPMCT"), "Blue Potion", "Blue Potion of Extra Healing");
+    public static final Item SPEAR_C = new Item("2A", "01", getType("PR"), getClasses("FRPMCT"), "Spear", "Spear");
+    public static final Item WAND_OF_FIREBALL_A = new Item("2B", "01", getType("WA"), getClasses("FRPMCT"), "Wand of Fireball", "Wand of Fireball");
+    public static final Item SCROLL_CLERIC_RAISE_DEAD_C = new Item("2C", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Raise Dead");
+    public static final Item CHAIN_MAIL_D = new Item("2D", "01", getType("AR"), getClasses("FRPMCT"), "Chain Mail", "Chain Mail");
+    public static final Item ROCK_O = new Item("2E", "01", getType("DA"), getClasses("FRPMCT"), "Rock", "Rock");
+    public static final Item KEY_DWARFEN_G = new Item("2F", "01", getType("IT"), getClasses("FRPMCT"), "Dwarfen Key", "Dwarfen Key");
+    public static final Item PLATE_MAIL_B = new Item("30", "01", getType("AR"), getClasses("FRPMCT"), "Plate Mail", "Plate Mail");
+    public static final Item POTION_POISON_C = new Item("31", "01", getType("PO"), getClasses("FRPMCT"), "Green Potion", "Green Potion of Poison");
+    public static final Item WAND_OF_FROST_D = new Item("32", "01", getType("WA"), getClasses("FRPMCT"), "Wand of Frost", "Wand of Frost");
+    public static final Item SCROLL_CLERIC_FLAME_BLADE_D = new Item("33", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Flame Blade");
+    public static final Item SCROLL_CLERIC_CURE_CRITICAL_WOUNDS_B = new Item("34", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Cure Critical Wound");
+    public static final Item WAND_OF_STICK_B = new Item("35", "01", getType("WA"), getClasses("FRPMCT"), "Wand of Stick", "Wand of Stick");
+    public static final Item STONE_HOLY_SYMBOL = new Item("36", "01", getType("IT"), getClasses("FRPMCT"), "Stone Holy Symbol", "Stone Holy Symbol");
+    public static final Item ARROW_V = new Item("37", "01", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
+    public static final Item ARROW_W = new Item("38", "01", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
+    public static final Item KEY_SKULL_B = new Item("39", "01", getType("IT"), getClasses("FRPMC"), "Skull Key", "Skull Key");
+    public static final Item RING_FEATHER_FALL_C = new Item("3A", "01", getType("RI"), getClasses("FRPMCT"), "Ring of Feather Fall", "Ring of Feather Fall");
+    public static final Item POTION_GIANT_STRENGTH_C = new Item("3B", "01", getType("PO"), getClasses("FRPMCT"), "Red Potion", "Red Potion of Giant Strength");
+    public static final Item SCROLL_CLERIC_FLAME_BLADE_E = new Item("3C", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Flame Blade");
+    public static final Item SCROLL_CLERIC_REMOVE_PARALYSIS_B = new Item("3D", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Remove Paralyse");
+    public static final Item SCROLL_CLERIC_NEUTRALIZE_POISON_B = new Item("3E", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Neutralize Poison");
+    public static final Item SCROLL_MAGE_CONE_OF_COLD_A = new Item("3F", "01", getType("SC"), getClasses("FRPMCT"), "Mage Scroll", "Mage Scroll of Cone of Cold");
+    public static final Item WAND_OF_LIGHTNING_B = new Item("40", "01", getType("WA"), getClasses("FRPMCT"), "Wand of Lightning", "Wand of Lightning");
+    public static final Item AMULETT_LUCK_B = new Item("41", "01", getType("AM"), getClasses("FRPMCT"), "Luck Stone Medallion", "Luck Stone Medallion");
+    public static final Item SCROLL_CLERIC_RAISE_DEAD_D = new Item("42", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Raise Dead");
+    public static final Item STONE_ORB = new Item("43", "01", getType("IT"), getClasses("FRPMCT"), "Stone Orb", "Stone Orb");
+    public static final Item KEY_DROW_G = new Item("44", "01", getType("IT"), getClasses("FRPMCT"), "Drow Key", "Drow Key");
+    public static final Item ORB_POWER_B = new Item("45", "01", getType("IT"), getClasses("FRPMCT"), "Orb of Power", "Orb of Power");
+    public static final Item SCROLL_CLERIC_RAISE_DEAD_E = new Item("46", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Raise Dead");
+    public static final Item SLIMY_ROCK_A = new Item("47", "01", getType("DA"), getClasses("FRPMCT"), "Slimy Rock", "Slimy Rock +2");
+    public static final Item SLIMY_ROCK_B = new Item("48", "01", getType("DA"), getClasses("FRPMCT"), "Slimy Rock", "Slimy Rock +2");
+    public static final Item SLASHER_A = new Item("49", "01", getType("PR"), getClasses("FRPMCT"), "Slasher", "Slasher +4");
+    public static final Item BANDED_MAIL_B = new Item("4A", "01", getType("AR"), getClasses("FRPMCT"), "Banded Mail", "Banded Mail +3");
+    public static final Item RING_ADORNMENT_D = new Item("4B", "01", getType("RI"), getClasses("FRPMCT"), "Ring of Adornment", "Ring of Adornment");
+    public static final Item SCROLL_MAGE_HOLD_MONSTER_A = new Item("4C", "01", getType("SC"), getClasses("FRPMCT"), "Mage Scroll", "Mage Scroll of Hold Monster");
+    public static final Item SCROLL_CLERIC_CURE_SERIOUS_WOUNDS_C = new Item("4D", "01", getType("SC"), getClasses("FRPMCT"), "Cleric Scroll", "Cleric Scroll of Cure Serious Wound");
+    public static final Item IRON_RATION_N = new Item("4E", "01", getType("FO"), getClasses("FRPMCT"), "Iron Rations", "Iron Rations");
+    public static final Item ROBE_DEFENSE_A = new Item("4F", "01", getType("AR"), getClasses("FRPMCT"), "Robe of Defense", "Robe of Defense");
+    public static final Item FLICKA = new Item("50", "01", getType("DA"), getClasses("FRPMCT"), "Flicka", "Flicka +5");
+    public static final Item KEY_DROW_H = new Item("51", "01", getType("IT"), getClasses("FRPMCT"), "Drow Key", "Drow Key");
+    public static final Item BONES_HUMAN_A = new Item("52", "01", getType("IT"), getClasses("FRPMCT"), "Human Bones", "Humand Bones");
+    public static final Item BONES_HUMAN_B = new Item("53", "01", getType("IT"), getClasses("FRPMCT"), "Human Bones", "Humand Bones");
+    public static final Item BONES_HUMAN_C = new Item("54", "01", getType("IT"), getClasses("FRPMCT"), "Human Bones", "Humand Bones");
+    public static final Item BONES_HUMAN_D = new Item("55", "01", getType("IT"), getClasses("FRPMCT"), "Human Bones", "Humand Bones");
+    public static final Item BONES_HUMAN_E = new Item("56", "01", getType("IT"), getClasses("FRPMCT"), "Human Bones", "Humand Bones");
+    public static final Item RING_PROTECTION_D = new Item("57", "01", getType("RI"), getClasses("FRPMCT"), "Ring of Protection", "Ring of Protection +2");
+    public static final Item BRACERS_B = new Item("58", "01", getType("BR"), getClasses("FRPMCT"), "Bracers", "Bracers +2");
+    public static final Item LEATHER_ARMOR_B = new Item("59", "01", getType("AR"), getClasses("FRPMCT"), "Leather Armor", "Leather Armor");
+    public static final Item SPEAR_D = new Item("5A", "01", getType("PR"), getClasses("FRPMCT"), "Spear", "Spear");
+    public static final Item PLATE_MAIL_C = new Item("5B", "01", getType("AR"), getClasses("FRPMCT"), "Plate Mail", "Plate Mail");
+    public static final Item SHIELD_E = new Item("5C", "01", getType("SH"), getClasses("FRPMCTC"), "Shield", "Shield");
+    public static final Item SEVERIOUS = new Item("5D", "01", getType("PR"), getClasses("FRPMCTC"), "Severious", "Severious +5");
+    public static final Item HELMET_B = new Item("5E", "01", getType("HE"), getClasses("FRPMCT"), "Helmet", "Helmet");
+    public static final Item HOLY_SYMBOL_PALADIN_B = new Item("5F", "01", getType("IT"), getClasses("FRPMCT"), "Paladin Holy Symbol", "Paladin Holy Symbol");
+    public static final Item SHORT_SWORD_B = new Item("60", "01", getType("SE"), getClasses("FRPMCT"), "Short Sword", "Short Sword");
+    public static final Item HOLY_SYMBOL_PALADIN_C = new Item("61", "01", getType("IT"), getClasses("FRPMCT"), "Paladin Holy Symbol", "Paladin Holy Symbol");
+    public static final Item LEATHER_ARMOR_C = new Item("62", "01", getType("AR"), getClasses("FRPMCT"), "Leather Armor", "Leather Armor");
+    public static final Item BOOTS_D = new Item("63", "01", getType("BO"), getClasses("FRPMCT"), "Boots", "Boots");
+    public static final Item IRON_RATION_O = new Item("64", "01", getType("FO"), getClasses("FRPMCT"), "Iron Rations", "Iron Rations");
+    public static final Item SHORT_SWORD_C = new Item("65", "01", getType("SE"), getClasses("FRPMCT"), "Short Sword", "Short Sword");
+    public static final Item LOCK_PICKS_D = new Item("66", "01", getType("IT"), getClasses("FRPMCT"), "Lock Picks", "Lock Picks");
+    public static final Item LEATHER_ARMOR_D = new Item("67", "01", getType("AR"), getClasses("FRPMCT"), "Leather Armor", "Leather Armor");
+    public static final Item BOOTS_E = new Item("68", "01", getType("BO"), getClasses("FRPMCT"), "Boots", "Boots");
+    public static final Item IRON_RATION_P = new Item("69", "01", getType("FO"), getClasses("FRPMCT"), "Iron Rations", "Iron Rations");
+    public static final Item MACE_F = new Item("6A", "01", getType("PR"), getClasses("FRPMCT"), "Mace", "Mace");
+    public static final Item SPELL_BOOK_B = new Item("6B", "01", getType("IT"), getClasses("FRPMCT"), "Spell Book", "Spell Book");
+    public static final Item HOLY_SYMBOL_CLERIC_B = new Item("6C", "01", getType("IT"), getClasses("FRPMCT"), "Cleric Holy Symbol", "Cleric Holy Symbol");
+    public static final Item ROBE_D = new Item("6D", "01", getType("AR"), getClasses("FRPMCT"), "Robe", "Robe");
+    public static final Item IRON_RATION_Q = new Item("6E", "01", getType("FO"), getClasses("FRPMCT"), "Iron Rations", "Iron Rations");
+    public static final Item MACE_G = new Item("6F", "01", getType("PR"), getClasses("FRPMCT"), "Mace", "Mace");
+    public static final Item SPELL_BOOK_C = new Item("70", "01", getType("IT"), getClasses("FRPMCT"), "Spell Book", "Spell Book");
+    public static final Item HOLY_SYMBOL_CLERIC_C = new Item("71", "01", getType("IT"), getClasses("FRPMCT"), "Cleric Holy Symbol", "Cleric Holy Symbol");
+    public static final Item ROBE_E = new Item("72", "01", getType("AR"), getClasses("FRPMCT"), "Robe", "Robe");
+    public static final Item DAGGER_C = new Item("73", "01", getType("DA"), getClasses("FRPMCT"), "Dagger", "Dagger");
+    public static final Item POTION_SPEED_A = new Item("74", "01", getType("PO"), getClasses("FRPMCT"), "Red Potion", "Red Potion of Speed");
+    public static final Item ARROW_X = new Item("75", "01", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
+    public static final Item ARROW_Y = new Item("76", "01", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
+    public static final Item ARROW_Z = new Item("77", "01", getType("AM"), getClasses("FRPMCTC"), "Arrow", "Arrow");
+    public static final Item KEY_DWARFEN_H = new Item("78", "01", getType("IT"), getClasses("FRPMCT"), "Dwarfen Key", "Dwarfen Key");
+    public static final Item ROCK_P = new Item("79", "01", getType("DA"), getClasses("FRPMCT"), "Rock", "Rock");
+    public static final Item ROCK_Q = new Item("7A", "01", getType("DA"), getClasses("FRPMCT"), "Rock", "Rock");
+    public static final Item POTION_EXTRA_HEALING_E = new Item("7B", "01", getType("PO"), getClasses("FRPMCT"), "Blue Potion", "Blue Potion of Extra Healing");
+    public static final Item ADAMATITE_DART_C = new Item("7C", "00", getType("DA"), getClasses("FRPMCT"), "Adamatite Dart", "Adamatite Dart +4");
+    public static final Item DAGGER_D = new Item("7D", "01", getType("DA"), getClasses("FRPMCT"), "Dagger", "Dagger");
     public static final Item[] ITEMS = new Item[]{ 
         NOTHING_A,
         LEATHER_ARMOR_A,
@@ -367,7 +491,6 @@ public class Items {
         IRON_RATION_A,
         MOUSE_POINTER_A,
         MOUSE_POINTER_B,
-        MOUSE_POINTER_C,
         MOUSE_POINTER_D,
         MOUSE_POINTER_E,
         MOUSE_POINTER_F,
@@ -391,7 +514,7 @@ public class Items {
         KEY_A,
         SCROLL_COMMISION_A,
         AXE_A,
-        DAGGER_b,
+        DAGGER_B,
         DART_A,
         ADAMATITE_DART_B,
         HALBERD_A,
@@ -575,7 +698,7 @@ public class Items {
         SCROLL_CLERIC_BLESS_B,
         ARROW_K,
         SCROLL_CLERIC_PROTCT_EVIL_10_A,
-        SCROLL_CLERIC_REMOVE_PARALYSE_A,
+        SCROLL_CLERIC_REMOVE_PARALYSIS_A,
         SCROLL_CLERIC_SLOW_POISON_B,
         SCROLL_CLERIC_CREATE_FOOD_A,
         KEY_E,
@@ -586,7 +709,7 @@ public class Items {
         ARROW_N,
         ARROW_O,
         SLICER,
-        BRACERS_AB,
+        BRACERS_DROW_B,
         RING_WIZARDRY,
         SCROLL_MAGE_FEAR_A,
         KEY_JEWELED_B,
@@ -609,7 +732,132 @@ public class Items {
         SCROLL_CLERIC_NEUTRALIZE_POISON_A,
         SCROLL_CLERIC_CURE_CRITICAL_WOUNDS_A,
         AMULETTE_ADORNMENT_B,
-        RING_ADORNMENT_C
+        RING_ADORNMENT_C,
+        RING_SUSTENANCE_B,
+        NIGHT_STALKER,
+        SCROLL_CLERIC_HOLD_PERSON_B,
+        IGNEOUS_ROCK_D,
+        KEY_RUBY_B,
+        SCROLL_MAGE_INVISIBILITY_10_B,
+        DROW_BOW_A,
+        SCROLL_CLERIC_PROTECT_EVIL_A,
+        BOOTS_DROW_A,
+        POTION_EXTRA_HEALING_C,
+        SCROLL_CLERIC_RAISE_DEAD_A,
+        KEY_RUBY_C,
+        KEY_DROW_C,
+        KEY_JEWELED_D,
+        SCROLL_MAGE_SHIELD_B,
+        WAND_OF_LIGHTNING_A,
+        PLATE_MAIL_GREAT_BEAUTY_A,
+        FLAIL_A,
+        KEY_DROW_D,
+        ROBE_C,
+        SCEPTER_OF_KINGLY_MIGHT,
+        SCROLL_MAGE_ICESTORM_A,
+        LOCK_PICKS_C,
+        KEY_DROW_E,
+        SCROLL_CLERIC_DETECT_MAGIC_B,
+        POTION_POISON_B,
+        SCROLL_MAGE_STONESKIN_A,
+        ARROW_S,
+        ARROW_T,
+        ARROW_U,
+        KEY_DROW_F,
+        SCROLL_CLERIC_DISPEL_MAGIC_B,
+        SCROLL_CLERIC_CURE_SERIOUS_WOUNDS_B,
+        SCROLL_MAGE_INVISIBILITY_B,
+        SCROLL_CLERIC_FLAME_BLADE_C,
+        SCROLL_CLERIC_PROTCT_EVIL_10_B,
+        SCROLL_MAGE_ARMOR_B,
+        SHIELD_DROW_A,
+        SCROLL_CLERIC_RAISE_DEAD_B,
+        BOOTS_DROW_B,
+        POTION_EXTRA_HEALING_D,
+        SPEAR_C,
+        WAND_OF_FIREBALL_A,
+        SCROLL_CLERIC_RAISE_DEAD_C,
+        CHAIN_MAIL_D,
+        ROCK_O,
+        KEY_DWARFEN_G,
+        PLATE_MAIL_B,
+        POTION_POISON_C,
+        WAND_OF_FROST_D,
+        SCROLL_CLERIC_FLAME_BLADE_D,
+        SCROLL_CLERIC_CURE_CRITICAL_WOUNDS_B,
+        WAND_OF_STICK_B,
+        STONE_HOLY_SYMBOL,
+        ARROW_V,
+        ARROW_W,
+        KEY_SKULL_B,
+        RING_FEATHER_FALL_C,
+        POTION_GIANT_STRENGTH_C,
+        SCROLL_CLERIC_FLAME_BLADE_E,
+        SCROLL_CLERIC_REMOVE_PARALYSIS_B,
+        SCROLL_CLERIC_NEUTRALIZE_POISON_B,
+        SCROLL_MAGE_CONE_OF_COLD_A,
+        WAND_OF_LIGHTNING_B,
+        AMULETT_LUCK_B,
+        SCROLL_CLERIC_RAISE_DEAD_D,
+        STONE_ORB,
+        KEY_DROW_G,
+        ORB_POWER_B,
+        SCROLL_CLERIC_RAISE_DEAD_E,
+        SLIMY_ROCK_A,
+        SLIMY_ROCK_B,
+        SLASHER_A,
+        BANDED_MAIL_B,
+        RING_ADORNMENT_D,
+        SCROLL_MAGE_HOLD_MONSTER_A,
+        SCROLL_CLERIC_CURE_SERIOUS_WOUNDS_C,
+        IRON_RATION_N,
+        ROBE_DEFENSE_A,
+        FLICKA,
+        KEY_DROW_H,
+        BONES_HUMAN_A,
+        BONES_HUMAN_B,
+        BONES_HUMAN_C,
+        BONES_HUMAN_D,
+        BONES_HUMAN_E,
+        RING_PROTECTION_D,
+        BRACERS_B,
+        LEATHER_ARMOR_B,
+        SPEAR_D,
+        PLATE_MAIL_C,
+        SHIELD_E,
+        SEVERIOUS,
+        HELMET_B,
+        HOLY_SYMBOL_PALADIN_B,
+        SHORT_SWORD_B,
+        HOLY_SYMBOL_PALADIN_C,
+        LEATHER_ARMOR_C,
+        BOOTS_D,
+        IRON_RATION_O,
+        SHORT_SWORD_C,
+        LOCK_PICKS_D,
+        LEATHER_ARMOR_D,
+        BOOTS_E,
+        IRON_RATION_P,
+        MACE_F,
+        SPELL_BOOK_B,
+        HOLY_SYMBOL_CLERIC_B,
+        ROBE_D,
+        IRON_RATION_Q,
+        MACE_G,
+        SPELL_BOOK_C,
+        HOLY_SYMBOL_CLERIC_C,
+        ROBE_E,
+        DAGGER_C,
+        POTION_SPEED_A,
+        ARROW_X,
+        ARROW_Y,
+        ARROW_Z,
+        KEY_DWARFEN_H,
+        ROCK_P,
+        ROCK_Q,
+        POTION_EXTRA_HEALING_E,
+        ADAMATITE_DART_C,
+        DAGGER_D
     };
     
     public static ItemType getType(String s){

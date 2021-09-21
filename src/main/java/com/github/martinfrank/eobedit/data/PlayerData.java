@@ -28,6 +28,15 @@ public class PlayerData {
     public static final int RACE_OFFSET = 31;
     public static final int RACE_LENGTH = 1;
 
+    public static final int ALIGNMENT_OFFSET = 33;
+    public static final int ALIGNMENT_LENGTH = 1;
+
+    public static final int PORTRAIT_OFFSET = 34;
+    public static final int PORTRAIT_LENGTH = 1;
+
+    public static final int FOODLEVEL_OFFSET = 35;
+    public static final int FOODLEVEL_LENGTH = 1;
+
 
     private final byte[] content;
     private final int slot;
@@ -196,4 +205,44 @@ public class PlayerData {
         byte[] rc = new byte[]{race.id};
         ByteArrayTool.set(content, rc, RACE_OFFSET, RACE_LENGTH);
     }
+
+    public void setAlignment(Alignment alignment){
+        byte[] data = ByteArrayTool.fromInt(alignment.id,ALIGNMENT_LENGTH);
+        ByteArrayTool.set(content, data, ALIGNMENT_OFFSET,ALIGNMENT_LENGTH);
+    }
+    public Alignment getAlignment(){
+        int id = 0xFF & ByteArrayTool.copy(content, ALIGNMENT_OFFSET, ALIGNMENT_LENGTH)[0];
+        for(Alignment alignment: Alignment.values()){
+            if(alignment.id == id){
+                return alignment;
+            }
+        }
+        return null;
+    }
+
+    public void setFoodLevelPercent(int percent){
+        if(percent < 0 || percent > 100){
+            throw new IllegalArgumentException("percent must be 0..100, but is: "+percent);
+        }
+        byte[] data = ByteArrayTool.fromInt(percent,FOODLEVEL_LENGTH);
+        ByteArrayTool.set(content, data, FOODLEVEL_OFFSET,FOODLEVEL_LENGTH);
+    }
+    public int getFoodLevelPercent(){
+        return 0xFF & ByteArrayTool.copy(content, FOODLEVEL_OFFSET, FOODLEVEL_LENGTH)[0];
+    }
+
+    public void setPortrait(Portrait portrait){
+        byte[] data = ByteArrayTool.fromInt(portrait.id,PORTRAIT_LENGTH);
+        ByteArrayTool.set(content, data, PORTRAIT_OFFSET,PORTRAIT_LENGTH);
+    }
+    public Portrait getPortrait(){
+        int id = 0xFF & ByteArrayTool.copy(content, PORTRAIT_OFFSET, PORTRAIT_LENGTH)[0];
+        for(Portrait portrait: Portrait.values()){
+            if(portrait.id == id){
+                return portrait;
+            }
+        }
+        return null;
+    }
+
 }
