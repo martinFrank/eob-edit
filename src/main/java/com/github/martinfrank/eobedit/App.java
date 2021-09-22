@@ -21,7 +21,7 @@ public class App {
         }
         SavegameFile file = new SavegameFile(args[0]);
         PlayerData p = file.getPlayer(0);
-        int start = 9 * PlayerData.INVENTORY_SLOT_AMOUNT; int low = 1;
+        int start = 1 * PlayerData.INVENTORY_SLOT_AMOUNT; int low = 1;
         for(int i = 0; i < PlayerData.INVENTORY_SLOT_AMOUNT; i++){
             int high = start + i;
             Item unknown = new Item(high, low);
