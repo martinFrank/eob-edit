@@ -10,13 +10,12 @@ import java.util.Locale;
 public class ScreenShotSnipper {
 
 
-
-    public static void main (String[] args){
+    public static void main(String[] args) {
         new ScreenShotSnipper().snippEmAll();
     }
 
-    private static final String SRC_DIRECTORY = "src/main/resources/img_raw";
-    private static final String DEST_DIRECTORY = "src/main/resources/img";
+    private static final String SRC_DIRECTORY = "src/main/resources/item_raw";
+    private static final String DEST_DIRECTORY = "src/main/resources/item";
     private static final String PNG = ".PNG";
     public static final int BACKGROUND_COLOR = 0x6569B6;
     private static final int SLOT_WIDTH = 2;
@@ -26,12 +25,9 @@ public class ScreenShotSnipper {
     private static final int SUB_IMG_SRC_WIDTH = 32;
     private static final int SUB_IMG_SRC_HEIGHT = 32;
 
-    private static final int SUB_IMG_DEST_WIDTH = 32;
-    private static final int SUB_IMG_DEST_HEIGHT = 32;
-
     private void snippEmAll() {
-        File[] src_raw = new File(SRC_DIRECTORY).listFiles();
-        for(File file: src_raw){
+        File[] srcRaw = new File(SRC_DIRECTORY).listFiles();
+        for (File file : srcRaw) {
             String imgStartIndex = getStartIndex(file);
             int primary = getPrimary(imgStartIndex);
             int secondary = getSecondary(imgStartIndex);
@@ -41,8 +37,8 @@ public class ScreenShotSnipper {
     }
 
     private void snippFile(File file, int primary, int secondary) {
-        System.out.println("file: "+file+" primary: "+Integer.toHexString(primary)+" secondary: "+Integer.toHexString(secondary) );
         try{
+            boolean breakOnOverflow = false;
             BufferedImage img = ImageIO.read(file);
             for(int dy = 0; dy < SLOT_HEIGHT; dy++){
                 for(int dx = 0; dx <SLOT_WIDTH; dx++){
@@ -53,21 +49,24 @@ public class ScreenShotSnipper {
                             (dy*2) * SUB_IMG_SRC_Y_OFFSET +
                             dy * SUB_IMG_SRC_HEIGHT;
                     File destFile = getDestFile(primary, secondary);
-                    System.out.println("new file: "+destFile);
 
                     BufferedImage subImage = img.getSubimage(subImageX, subImageY, SUB_IMG_SRC_WIDTH, SUB_IMG_SRC_HEIGHT);
                     BufferedImage filtered = filterTransparency(subImage);
                     ImageIO.write(filtered, "PNG", destFile);
 
                     primary = primary + 1;
-                    if (primary > 0xFF){
-                        primary = 0;
-                        secondary = secondary + 1;
+                    if (primary > 0xFF) {
+                        breakOnOverflow = true;
+                        break;
                     }
+                }
+                if (breakOnOverflow) {
+                    breakOnOverflow = false;
+                    break;
                 }
             }
         }catch (IOException e){
-            System.out.println("error: "+e);
+            //just a dev tool, so devs can read stacktrace
             e.printStackTrace();
         }
     }
@@ -81,8 +80,8 @@ public class ScreenShotSnipper {
     }
 
     private File getDestFile(int primary, int secondary) {
-        String filename = (primary<0xF?"0":"")+Integer.toHexString(primary).toUpperCase(Locale.ROOT)+
-                (secondary<0xF?"0":"")+Integer.toHexString(secondary).toUpperCase(Locale.ROOT)+
+        String filename = (primary < 0x10 ? "0" : "") + Integer.toHexString(primary).toUpperCase(Locale.ROOT) +
+                (secondary < 0x10 ? "0" : "") + Integer.toHexString(secondary).toUpperCase(Locale.ROOT) +
                 PNG;
         return new File(DEST_DIRECTORY, filename);
     }

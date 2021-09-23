@@ -1,6 +1,7 @@
 package com.github.martinfrank.eobedit.data;
 
 import java.util.Arrays;
+import java.util.Locale;
 
 public class Item {
 
@@ -36,5 +37,12 @@ public class Item {
                 ", classes=" + Arrays.toString(classes) +
                 ", description='" + description + '\'' +
                 '}';
+    }
+
+    public String getId() {
+        int prim = 0xFF & id[0];
+        int sec = 0xFF & id[1];
+        return (prim < 0x10 ? "0" : "") + Integer.toHexString(prim).toUpperCase(Locale.ROOT) +
+                (sec < 0x10 ? "0" : "") + Integer.toHexString(sec).toUpperCase(Locale.ROOT);
     }
 }

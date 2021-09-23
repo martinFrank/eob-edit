@@ -1,7 +1,5 @@
 package com.github.martinfrank.eobedit.data;
 
-import java.util.Arrays;
-
 public class PlayerData {
 
     public static final int CHARACTER_NAME_OFFSET = 2;
@@ -39,21 +37,18 @@ public class PlayerData {
 
 
     private final byte[] content;
-    private final int slot;
 
-    public PlayerData(int slot, byte[] content ){
-        this.slot = slot;
+    public PlayerData(byte[] content) {
         this.content = content;
-    }
-
-
-    public String getName(){
-        byte[] name = ByteArrayTool.copy(content, CHARACTER_NAME_OFFSET, CHARACTER_NAME_LENGTH);
-        return ByteArrayTool.asString(name);
     }
 
     public byte[] getContent() {
         return content;
+    }
+
+    public String getName() {
+        byte[] name = ByteArrayTool.copy(content, CHARACTER_NAME_OFFSET, CHARACTER_NAME_LENGTH);
+        return ByteArrayTool.asString(name);
     }
 
     public void setName(String name) {

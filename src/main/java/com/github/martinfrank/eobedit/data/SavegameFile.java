@@ -41,7 +41,7 @@ public class SavegameFile {
     private void copyContentIntoPlayerData() {
         for(int i = 0; i < AMOUNT_CHARACTERS; i ++){
             int position = i * CHARACTER_DATA_LENGTH;
-            playerData[i] = new PlayerData(i, ByteArrayTool.copy(content, position, CHARACTER_DATA_LENGTH));
+            playerData[i] = new PlayerData(ByteArrayTool.copy(content, position, CHARACTER_DATA_LENGTH));
         }
     }
 
