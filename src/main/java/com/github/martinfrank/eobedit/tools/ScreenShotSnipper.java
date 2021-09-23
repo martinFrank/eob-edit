@@ -102,8 +102,9 @@ public class ScreenShotSnipper {
     private static final ImageFilter TRANSPARENT_FILTER = new RGBImageFilter() {
 
         public int filterRGB(int x, int y, int rgb) {
-            return (0x00FFFFFF & rgb) == BACKGROUND_COLOR ? 0xFFFFFFFF : rgb;
+            return (0x00FFFFFF & rgb) == BACKGROUND_COLOR ? 0x00FFFFFF : rgb;
         }
+
     };
 
 }
