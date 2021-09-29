@@ -1,5 +1,8 @@
 package com.github.martinfrank.eobedit.data;
 
+import com.github.martinfrank.eobedit.event.ChangeEventType;
+import com.github.martinfrank.eobedit.event.PlayerDataChangeEventListener;
+
 public class PlayerData {
 
     public static final int CHARACTER_NAME_OFFSET = 2;
@@ -8,6 +11,11 @@ public class PlayerData {
     public static final int INVENTORY_LENGTH = 2;
     public static final int INVENTORY_OFFSET = 123;
     public static final int INVENTORY_SLOT_AMOUNT = 14;
+
+    public static final int PRIMARY_LENGTH = 2;
+    public static final int PRIMARY_OFFSET = 119;
+    public static final int SECONDARY_LENGTH = 2;
+    public static final int SECONDARY_OFFSET = 121;
 
     public static final int STATS_LENGTH = 2;
 
@@ -35,10 +43,13 @@ public class PlayerData {
     public static final int FOODLEVEL_OFFSET = 35;
     public static final int FOODLEVEL_LENGTH = 1;
 
-
+    private boolean hasUnsavedChanges = false;
+    private PlayerDataChangeEventListener listener;
+    private final int index;
     private final byte[] content;
 
-    public PlayerData(byte[] content) {
+    public PlayerData(int index, byte[] content) {
+        this.index = index;
         this.content = content;
     }
 
@@ -54,7 +65,11 @@ public class PlayerData {
     public void setName(String name) {
         byte[] nameByte = name.getBytes();
         ByteArrayTool.set(content, nameByte, CHARACTER_NAME_OFFSET, CHARACTER_NAME_LENGTH);
+        updateChanges(ChangeEventType.NAME);
+
     }
+
+
 
     public Item getInventory(int index){
         if (index < 0 || index > INVENTORY_SLOT_AMOUNT){
@@ -71,6 +86,8 @@ public class PlayerData {
         }
         int offset = INVENTORY_OFFSET + index * INVENTORY_LENGTH;
         ByteArrayTool.set(content, item.id, offset, INVENTORY_LENGTH);
+        //FIXME index?
+        updateChanges(ChangeEventType.INVENTORY);
     }
 
     public Stat getStat(Stat.Stats stats) {
@@ -93,6 +110,7 @@ public class PlayerData {
         if(stats == Stat.Stats.STR){
             ByteArrayTool.set(content, percent, stats.offset+STATS_LENGTH, STATS_LENGTH);
         }
+        updateChanges(ChangeEventType.STATS);
     }
 
     public void setStat(Stat.Stats stats, int current, int max) {
@@ -128,27 +146,33 @@ public class PlayerData {
     public void setExpLevelFirst(int lvl){
         byte[] data = new byte[]{(byte)lvl};
         ByteArrayTool.set(content, data, EXP_LVL1_OFFSET, EXP_LVL_LENGTH);
+        updateChanges(ChangeEventType.EXP_LEVEL_FIRST);
     }
     public void setExpLevelSecond(int lvl){
         byte[] data = new byte[]{(byte)lvl};
         ByteArrayTool.set(content, data, EXP_LVL2_OFFSET, EXP_LVL_LENGTH);
+        updateChanges(ChangeEventType.EXP_LEVEL_SECOND);
     }
     public void setExpLevelThird(int lvl){
         byte[] data = new byte[]{(byte)lvl};
         ByteArrayTool.set(content, data, EXP_LVL3_OFFSET, EXP_LVL_LENGTH);
+        updateChanges(ChangeEventType.EXP_LEVEL_THIRD);
     }
 
     public void setExpPointsFirst(int expPoints){
         byte[] data = ByteArrayTool.fromInt(expPoints,EXP_PTS_LENGTH);
         ByteArrayTool.set(content, data, EXP_PTS1_OFFSET,EXP_PTS_LENGTH);
+        updateChanges(ChangeEventType.EXP_POINTS_FIRST);
     }
     public void setExpPointsSecond(int expPoints){
         byte[] data = ByteArrayTool.fromInt(expPoints,EXP_PTS_LENGTH);
         ByteArrayTool.set(content, data, EXP_PTS2_OFFSET,EXP_PTS_LENGTH);
+        updateChanges(ChangeEventType.EXP_POINTS_SECOND);
     }
     public void setExpPointsThird(int expPoints){
         byte[] data = ByteArrayTool.fromInt(expPoints,EXP_PTS_LENGTH);
         ByteArrayTool.set(content, data, EXP_PTS3_OFFSET,EXP_PTS_LENGTH);
+        updateChanges(ChangeEventType.EXP_POINTS_THIRD);
     }
 
     public Profession getProfession() {
@@ -184,6 +208,7 @@ public class PlayerData {
             if(getExpLevelThird() == 0)
                 setExpLevelThird(firstLevel);
         }
+        updateChanges(ChangeEventType.PROFESSION);
     }
 
     public Race getRace() {
@@ -199,12 +224,15 @@ public class PlayerData {
     public void setRace(Race race) {
         byte[] rc = new byte[]{race.id};
         ByteArrayTool.set(content, rc, RACE_OFFSET, RACE_LENGTH);
+        updateChanges(ChangeEventType.RACE);
     }
 
     public void setAlignment(Alignment alignment){
         byte[] data = ByteArrayTool.fromInt(alignment.id,ALIGNMENT_LENGTH);
         ByteArrayTool.set(content, data, ALIGNMENT_OFFSET,ALIGNMENT_LENGTH);
+        updateChanges(ChangeEventType.ALIGNMENT);
     }
+
     public Alignment getAlignment(){
         int id = 0xFF & ByteArrayTool.copy(content, ALIGNMENT_OFFSET, ALIGNMENT_LENGTH)[0];
         for(Alignment alignment: Alignment.values()){
@@ -221,6 +249,7 @@ public class PlayerData {
         }
         byte[] data = ByteArrayTool.fromInt(percent,FOODLEVEL_LENGTH);
         ByteArrayTool.set(content, data, FOODLEVEL_OFFSET,FOODLEVEL_LENGTH);
+        updateChanges(ChangeEventType.FOOD_LEVEL);
     }
     public int getFoodLevelPercent(){
         return 0xFF & ByteArrayTool.copy(content, FOODLEVEL_OFFSET, FOODLEVEL_LENGTH)[0];
@@ -229,6 +258,7 @@ public class PlayerData {
     public void setPortrait(Portrait portrait){
         byte[] data = ByteArrayTool.fromInt(portrait.id,PORTRAIT_LENGTH);
         ByteArrayTool.set(content, data, PORTRAIT_OFFSET,PORTRAIT_LENGTH);
+        updateChanges(ChangeEventType.PORTRAIT);
     }
     public Portrait getPortrait(){
         int id = 0xFF & ByteArrayTool.copy(content, PORTRAIT_OFFSET, PORTRAIT_LENGTH)[0];
@@ -240,4 +270,22 @@ public class PlayerData {
         return null;
     }
 
+    public boolean hasUnsavedChanges() {
+        return hasUnsavedChanges;
+    }
+
+    public void resetHasUnsavedChanged() {
+        hasUnsavedChanges = false;
+    }
+
+    private void updateChanges(ChangeEventType type) {
+        if(listener != null){
+            listener.playerDataChanged(index, type);
+        }
+        hasUnsavedChanges = true;
+    }
+
+    public void setPlayerDataChangeListener(PlayerDataChangeEventListener listener) {
+        this.listener = listener;
+    }
 }

@@ -20,7 +20,8 @@ public class App {
         if (args == null) {
             throw new IllegalArgumentException("you must provide a savegame file");
         }
-        SavegameFile file = new SavegameFile(args[0]);
+        SavegameFile file = new SavegameFile();
+        file.load(args[0]);
         PlayerData playerData = file.getPlayer(0);
         LOGGER.debug("Player 0 {}", playerData.getName());
     }
