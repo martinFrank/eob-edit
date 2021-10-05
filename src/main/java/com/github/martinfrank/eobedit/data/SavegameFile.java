@@ -41,21 +41,21 @@ public class SavegameFile {
 //    }
 
     public void load(String filename) throws IOException {
-        if(filename == null){
+        if (filename == null) {
             throw new IllegalArgumentException("filename must be provided");
         }
         File file = new File(filename);
         load(file);
-        if(!file.exists()){
-            throw new IllegalArgumentException("file "+filename+" does not exist");
+        if (!file.exists()) {
+            throw new IllegalArgumentException("file " + filename + " does not exist");
         }
         reload();
     }
 
     public void load(File file) throws IOException {
         this.file = file;
-        if(!file.exists()){
-            throw new IllegalArgumentException("file "+file.getName()+" does not exist");
+        if (!file.exists()) {
+            throw new IllegalArgumentException("file " + file.getName() + " does not exist");
         }
         reload();
     }
@@ -63,13 +63,15 @@ public class SavegameFile {
     public void reload() throws IOException {
         content = Files.readAllBytes(file.toPath());
         copyContentIntoPlayerData();
-        Arrays.stream(playerData).forEach(p -> p.setPlayerDataChangeListener(listener));
-        listener.playerDataChanged(0, ChangeEventType.LOAD_DATA);
+        if (listener != null) {
+            Arrays.stream(playerData).forEach(p -> p.setPlayerDataChangeListener(listener));
+            listener.playerDataChanged(0, ChangeEventType.LOAD_DATA);
+        }
         LOGGER.debug("successfully loaded file {}", file.getName());
     }
 
     private void copyContentIntoPlayerData() {
-        for(int i = 0; i < AMOUNT_CHARACTERS; i ++){
+        for (int i = 0; i < AMOUNT_CHARACTERS; i++) {
             int position = i * CHARACTER_DATA_LENGTH;
             playerData[i] = new PlayerData(i, ByteArrayTool.copy(content, position, CHARACTER_DATA_LENGTH));
         }
@@ -78,12 +80,17 @@ public class SavegameFile {
     public void save() throws IOException {
         copyPlayerDataIntoContent();
         Files.write(file.toPath(), content, StandardOpenOption.WRITE);
-        Arrays.stream(playerData).forEach(PlayerData::resetHasUnsavedChanged);
+        resetUnsavedChanges();
+
         LOGGER.debug("successfully written file {}", file.getName());
     }
 
+    public void resetUnsavedChanges() {
+        Arrays.stream(playerData).forEach(PlayerData::resetHasUnsavedChanged);
+    }
+
     private void copyPlayerDataIntoContent() {
-        for(int i = 0; i < AMOUNT_CHARACTERS; i ++){
+        for (int i = 0; i < AMOUNT_CHARACTERS; i++) {
             int position = i * CHARACTER_DATA_LENGTH;
             System.arraycopy(playerData[i].getContent(), 0, content, position, CHARACTER_DATA_LENGTH);
         }
@@ -93,8 +100,8 @@ public class SavegameFile {
         return playerData[i];
     }
 
-    public boolean hasUnsavedChanges(){
-        if(content == null){
+    public boolean hasUnsavedChanges() {
+        if (content == null) {
             return false;
         }
         return Arrays.stream(playerData).anyMatch(PlayerData::hasUnsavedChanges);

@@ -21,6 +21,7 @@ public class ImageProvider {
     private static final String PNG = ".PNG";
     private static final String GUI_PAGE_A = "PAGE_A";
     private static final String GUI_PAGE_B = "PAGE_B";
+    private static final String GUI_ITEM_BACK = "ITEM_BACK";
     private static final String PORT = "PORT_";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ImageProvider.class);
@@ -32,7 +33,6 @@ public class ImageProvider {
     public BufferedImage getPortrait(Portrait portrait) {
         String id = (portrait.id < 0x10 ? "0" : "") + Integer.toHexString(portrait.id).toUpperCase(Locale.ROOT);
         return loadImageOrNull(PORTRAIT_DIR, PORT + id + PNG);
-
     }
 
     public BufferedImage getGuiPageA() {
@@ -41,6 +41,10 @@ public class ImageProvider {
 
     public BufferedImage getGuiPageB() {
         return loadImageOrNull(GUI_DIR, GUI_PAGE_B + PNG);
+    }
+
+    public BufferedImage getItemBackground() {
+        return loadImageOrNull(GUI_DIR, GUI_ITEM_BACK + PNG);
     }
 
     private BufferedImage loadImageOrNull(String dir, String filename) {
