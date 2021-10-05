@@ -1,5 +1,8 @@
 package com.github.martinfrank.eobedit.tools;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.*;
@@ -9,13 +12,16 @@ import java.util.Locale;
 
 public class ScreenShotSnipper {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(ScreenShotSnipper.class);
 
     public static void main(String[] args) {
         new ScreenShotSnipper().snippEmAll();
     }
 
-    private static final String SRC_DIRECTORY = "src/main/resources/item_raw";
-    private static final String DEST_DIRECTORY = "src/main/resources/item";
+//    private static final String SRC_DIRECTORY = "src/main/resources/item_raw";
+    private static final String SRC_DIRECTORY = "C:\\Users\\fmar\\IdeaProjects\\eob-edit\\src\\main\\resources\\item_raw";
+//    private static final String DEST_DIRECTORY = "src/main/resources/item";
+    private static final String DEST_DIRECTORY = "C:\\Users\\fmar\\IdeaProjects\\eob-edit\\src\\main\\resources\\item";
     private static final String PNG = ".PNG";
     public static final int BACKGROUND_COLOR = 0x6569B6;
     private static final int SLOT_WIDTH = 2;
