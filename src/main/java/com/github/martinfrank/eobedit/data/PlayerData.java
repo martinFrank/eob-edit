@@ -5,6 +5,9 @@ import com.github.martinfrank.eobedit.event.PlayerDataChangeEventListener;
 
 public class PlayerData {
 
+    public static final int DATA_INDICATOR_OFFSET = 1;
+    public static final int DATA_INDICATOR_LENGTH = 1;
+
     public static final int CHARACTER_NAME_OFFSET = 2;
     public static final int CHARACTER_NAME_LENGTH = 10;
 
@@ -287,5 +290,9 @@ public class PlayerData {
 
     public void setPlayerDataChangeListener(PlayerDataChangeEventListener listener) {
         this.listener = listener;
+    }
+
+    public boolean hasPlayerData(){
+        return ByteArrayTool.copy(content, DATA_INDICATOR_OFFSET, DATA_INDICATOR_LENGTH)[0] != 0;
     }
 }
